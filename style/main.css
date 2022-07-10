@@ -46,8 +46,6 @@ body {
 .color__navhover {
   color: #8b0000;
   transition: color 1s;
-  transition: all 0.2s ease-in-out;
-  transform: scale(1.2);
 }
 
 a.nav-link {
@@ -303,7 +301,7 @@ span.parrafo-negrita {
 .fundadores div img {
   width: 100px;
   height: 100px;
-  border-radius: 70px;
+  border-radius: 80px;
 }
 
 .Img__Company {
@@ -320,6 +318,14 @@ span.parrafo-negrita {
   color: #7e7777;
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+.margen_miembros {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .titulo__bloque__tres {
@@ -485,13 +491,125 @@ ul.ul-remeras {
 }
 
 /*------FIN DE CAROUSEL------*/
+/*MIEMBROS DE DRIP SITIO INDIVIDUAL*/
+.contenedor_miembros {
+  display: flex;
+  flex-direction: column;
+  border-left: 5px red solid;
+  margin: 20px;
+}
+.contenedor_miembros div {
+  display: flex;
+}
+.contenedor_miembros div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 90px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.presentacion {
+  display: flex;
+  flex-direction: column;
+  color: #7e7777;
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.presentacion h1 {
+  font-size: 3rem;
+}
+
+.equipos {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 10px;
+  flex-direction: column;
+}
+.equipos h1 {
+  color: #7e7777;
+}
+.equipos h2 {
+  margin-left: 30px;
+  color: #7e7777;
+}
+.equipos .mdp {
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.equipos p {
+  font-size: 25px;
+  color: #811313;
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.equipos span {
+  font-size: 20px;
+  color: #7e7777;
+}
+
+.equipos_plantilla {
+  display: flex;
+  flex-wrap: wrap;
+}
+.equipos_plantilla div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
+}
+.equipos_plantilla div img {
+  width: 140px;
+  height: 140px;
+}
+
+#fifa_equipos {
+  width: 150px;
+  height: 120px;
+}
+
+.TEAM_MDP {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.TEAM_MDP #copa {
+  width: 160px;
+  height: 200px;
+}
+
+#darksouls {
+  width: 200px;
+  height: 120px;
+}
+
+#clashroyale {
+  width: 160px;
+  height: 100px;
+}
+
+#fate {
+  width: 200px;
+  height: 115px;
+}
+
+/*FIN DE MIEMBROS DE DRIP SITIO INDIVIDUAL*/
 /*-----------MEDIA QUERIES-----------*/
 @media screen and (max-width: 1024px) {
   .navbar > .container, .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm,
 .navbar > .container-xl, .navbar > .container-xxl {
     justify-content: center;
   }
-
   .titular__drip {
     color: white;
     font-family: "Abril Fatface", cursive;
@@ -502,27 +620,21 @@ ul.ul-remeras {
     margin-bottom: 10px;
     background-color: #380303;
   }
-
   .navbar__flex {
     align-items: center;
   }
-
   ul.navbar-nav.color__nav__pag.h2 {
     align-items: center;
   }
-
   nav ul {
     flex-direction: column;
   }
-
   #DRIP {
     padding-right: 50px;
   }
-
   .w-100 {
     height: 250px;
   }
-
   /*REMERAS DRIP DE TIENDA*/
   .remeras__tamaño div {
     display: flex;
@@ -531,24 +643,20 @@ ul.ul-remeras {
     align-items: center;
     width: 100%;
   }
-
   .drip__titulo__remeras {
     width: 100%;
     margin: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-
   .remeras__tamaño div li a img {
     width: 350px;
     height: 200px;
   }
-
   #romo__remera img {
     width: 400px;
     height: 200px;
   }
-
   .botones__ropa {
     width: 300px;
     height: 300px;
@@ -556,24 +664,20 @@ ul.ul-remeras {
     margin: 10px;
     border-radius: 30px;
   }
-
   /* FIN DE REMERAS DRIP*/
   .nav-contenido .lista-contenido li {
     padding-left: 0px;
     padding-right: 0px;
   }
-
   .nav-contenido .lista-contenido .img__logo__juego {
     width: 150px;
     height: 150px;
     margin-right: 75px;
     margin-left: 0;
   }
-
   #FIFA {
     width: 150px;
   }
-
   .nav-contenido .lista-contenido li a img {
     width: 200px;
     height: 400px;
@@ -581,20 +685,17 @@ ul.ul-remeras {
     margin-left: 0px;
     margin-right: 130px;
   }
-
   .fundadores div {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
   }
-
   /*--------CARTA--------*/
   .drip__carta {
     display: flex;
     justify-content: center;
   }
-
   .carta {
     background: #141313;
     padding: 10px;
@@ -603,14 +704,12 @@ ul.ul-remeras {
     padding-right: 20px;
     padding-bottom: 20px;
   }
-
   .drip__carta img {
     width: 400px;
     height: 400px;
     margin-right: 20px;
     border-radius: 20px;
   }
-
   .carta__izq {
     background-color: #2e0000;
     color: #7e7777;
@@ -619,7 +718,6 @@ ul.ul-remeras {
     border-radius: 20px;
     padding: 20px;
   }
-
   .drip__carta__titulo {
     text-align: center;
     margin-top: 0px;
@@ -627,7 +725,6 @@ ul.ul-remeras {
     font-size: 40px;
     color: #5c0404;
   }
-
   /*--------FIN DE CARTA--------*/
   .titulo__bloque__tres {
     color: #7e7777;
@@ -646,7 +743,6 @@ ul.ul-remeras {
 .navbar > .container-xl, .navbar > .container-xxl {
     justify-content: center;
   }
-
   .titular__drip {
     color: #ffffff;
     font-family: "Abril Fatface", cursive;
@@ -657,38 +753,33 @@ ul.ul-remeras {
     margin-bottom: 10px;
     background-color: #380303;
   }
-
   .navbar__flex {
     align-items: center;
   }
-
   nav ul {
     flex-direction: column;
   }
-
   li.nav-item {
     padding: 0px;
     margin: 0;
   }
-
   #DRIP {
     padding-right: 0;
     padding: 0;
   }
-
   .w-100 {
     height: 215px;
   }
-
+  .img__centro {
+    margin: 30px;
+  }
   ul.navbar-nav.color__nav__pag.h2 {
     align-items: center;
   }
-
   .color__nav :hover {
     transition: none;
     transform: none;
   }
-
   /*-----REMERAS DRIP DE TIENDA-----*/
   .remeras__tamaño div {
     display: flex;
@@ -696,24 +787,20 @@ ul.ul-remeras {
     justify-content: center;
     align-items: center;
   }
-
   .drip__titulo__remeras {
     width: 100%;
     margin: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-
   .remeras__tamaño div li a img {
     width: 200px;
     height: auto;
   }
-
   #romo__remera img {
     width: 300px;
     height: auto;
   }
-
   .botones__ropa {
     width: 215px;
     height: 150px;
@@ -721,34 +808,28 @@ ul.ul-remeras {
     padding: 0;
     margin: 10px;
   }
-
   .botones__flex {
     flex-direction: column;
   }
-
   /* ---FIN DE REMERAS DRIP----*/
   .icon__flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
   .logos__flex {
     flex-direction: column;
   }
-
   .nav-contenido .lista-contenido li {
     padding-left: 0px;
     padding-right: 0px;
   }
-
   .nav-contenido .lista-contenido .img__logo__juego {
     width: 150px;
     height: 150px;
     margin-right: 40px;
     margin-left: 0;
   }
-
   .nav-contenido .lista-contenido li a img {
     width: 200px;
     height: 400px;
@@ -756,22 +837,19 @@ ul.ul-remeras {
     margin-left: 0px;
     margin-right: 50px;
   }
-
   #FIFA {
     width: 150px;
   }
-
   .fundadores {
     flex-wrap: wrap;
     justify-content: center;
+    margin: 30px;
   }
-
   /*------CARTA------*/
   .drip__carta {
     display: flex;
     justify-content: center;
   }
-
   .carta {
     background: #141313;
     padding: 10px;
@@ -779,15 +857,15 @@ ul.ul-remeras {
     border-radius: 30px;
     padding-right: 0;
     padding-bottom: 20px;
+    width: 100%;
+    height: auto;
   }
-
   .drip__carta img {
     width: 185px;
     height: 400px;
     margin-right: 20px;
     border-radius: 20px;
   }
-
   .carta__izq {
     background-color: #580303;
     width: 195px;
@@ -799,7 +877,6 @@ ul.ul-remeras {
     padding: 20px;
     margin: 0;
   }
-
   .drip__carta__titulo {
     text-align: center;
     margin-top: 0px;
@@ -807,7 +884,6 @@ ul.ul-remeras {
     font-size: 40px;
     color: #580303;
   }
-
   /*------FIN DE CARTA------*/
   .titulo__bloque__tres {
     color: #7e7777;
@@ -819,6 +895,9 @@ ul.ul-remeras {
     border-radius: 20px;
     text-align: center;
     display: flex;
+    justify-content: center;
+  }
+  .equipos_plantilla {
     justify-content: center;
   }
 }/*# sourceMappingURL=main.css.map */
