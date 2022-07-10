@@ -1,0 +1,30 @@
+*{
+  /*RESET*/
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+  /*BODY DE PAGINAS*/
+    box-sizing: border-box;
+    background-color: black;
+    background: url(../images/BACKGROUND/black-background-fino\ conv.jpeg);
+    overflow: scroll;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Joan', serif;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+  #body__bg{
+    /*body de index*/
+    background: url(../images/BACKGROUND/wallpaperbetter.com_1680x1050.jpg);
+    box-sizing: border-box;  
+    overflow: scroll;
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(12px 3px 3px black);
+    font-family: 'Joan', serif;
+    font-family: 'Stick No Bills', sans-serif;
+  }

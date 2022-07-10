@@ -1,0 +1,36 @@
+@mixin size ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
+
+@mixin bordes ($bordes) {
+    border-radius: $bordes;
+}
+
+@mixin espaciados ($padtop,$padbot,$padizq,$padder) {
+    padding-top: $padtop;
+    padding-bottom: $padbot;
+    padding-left: $padizq;
+    padding-right: $padder;
+}
+
+@mixin margen ($martop,$marbot,$marizq,$marder) {
+    margin-top: $martop;
+    margin-bottom: $marbot;
+    margin-left: $marizq;
+    margin-right: $marder;
+}
+
+@mixin caja ($pad,$mar){
+    padding: $pad;
+    margin: $mar;
+}
+
+@mixin flex {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    
